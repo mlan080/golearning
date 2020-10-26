@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  http-server:
+    build: .
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      - GOFLAGS=-mod=vendor
+      - PORT=8080
+      - REDIS_HOST
+      - REDIS_PORT
+
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:5

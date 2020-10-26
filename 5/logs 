@@ -1,0 +1,11 @@
+Question 1 : 
+"price was updated on GetFareDetails” 
+Internal/detail/service.go 176 
+New price old price 
+
+Question 2: 
+Invalid trip - internal/search/validator.go 84
+Leg have invalid: trainNumber 166
+Got unknown transport type from SBB - internal/search/transformer/internal_to_profobuf_transformer.go 103
+
+Question 3: 
