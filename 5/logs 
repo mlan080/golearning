@@ -1,11 +1,18 @@
-Question 1 : 
-"price was updated on GetFareDetails” 
+Question 1: 
+Message: "price was updated on GetFareDetails” 
 Internal/detail/service.go 176 
 New price old price 
 
 Question 2: 
-Invalid trip - internal/search/validator.go 84
-Leg have invalid: trainNumber 166
-Got unknown transport type from SBB - internal/search/transformer/internal_to_profobuf_transformer.go 103
+How to do it? Advaned filter -  jsonPayload.message=~"translate"
+Message: error: "failed to translate fare name" internal/details/service.go 138 
+Extra details: Translation not found for key: translations.de.sbb.sbb.fare_name.z_pass_schwyzzug_zvv_individual_ticket" 
+- ostwind_zvv_individual_ticket" 
+- tnw_individual_ticket" 
 
 Question 3: 
+Message: failed to create key on PhraseApp internal/details/services.go 172 
+Extra details: "failed to execute request: request failed with status code: 422, body: {"message":"Validation failed","errors":[{"resource":"Key","field":"name","message":"has already been taken"}]}" 
+func Warn package log "github.com/sirupsen/logrus" 307
+
+
